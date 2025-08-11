@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Freedom - India's Journey</title>
+  <meta name="description" content="India's transformation from independence to digital revolution">
+  <style>
     :root {
       --saffron: #FF9933;
       --white: #FFFFFF;
@@ -18,8 +19,7 @@
     h1,h2,h3,h4 { font-family: var(--font-heading); color: var(--blue); }
     a { text-decoration: none; }
     .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 15px; }
-    
-    /* Header */
+
     .header { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.9); box-shadow: 0 2px 15px rgba(0,0,0,0.1); z-index: 1000; padding: 15px 0; }
     .header-container { display: flex; justify-content: space-between; align-items: center; }
     .logo h1 { font-weight: 700; color: var(--blue); }
@@ -28,20 +28,15 @@
     .navmenu a { color: var(--blue); font-weight: 500; transition: color 0.3s; }
     .navmenu a:hover, .navmenu a.active { color: var(--saffron); }
     .mobile-nav-toggle { display: none; font-size: 24px; cursor: pointer; color: var(--blue); }
-    
-    /* Sections */
+
     section { padding: 80px 0; }
     .section-title { text-align: center; margin-bottom: 50px; }
     .section-title h2 { font-size: 14px; text-transform: uppercase; color: var(--blue); }
     .section-title div span { font-size: 36px; color: var(--blue); }
     .section-title div .description-title { font-size: 36px; color: var(--saffron); font-weight: 700; }
-    
-    
     .hero { padding-top: 120px; text-align: center; }
     .hero h1 { font-size: 48px; margin-bottom: 20px; }
     .divider { width: 80px; height: 4px; background: var(--blue); margin: 20px auto; }
-    
-
     .about-image
     .about-image {
   height: 400px;
@@ -70,8 +65,6 @@
       border-left: 4px solid var(--saffron);
     }
     .feature-item i { color: var(--saffron); font-size: 24px; margin-bottom: 10px; }
-    
-    /* Services */
     .light-background { background-color: rgba(255,255,255,0.7); }
     .service-card { 
       background: var(--white); 
@@ -83,8 +76,6 @@
       border-top: 3px solid var(--green);
     }
     .service-icon i { font-size: 40px; color: var(--green); margin-bottom: 20px; }
-    
-    /* Steps */
     .steps-wrapper { max-width: 800px; margin: 0 auto; }
     .step-item { margin-bottom: 30px; }
     .step-content { display: flex; align-items: flex-start; }
@@ -101,8 +92,6 @@
       margin-right: 20px; 
       flex-shrink: 0; 
     }
-    
-    /* Team */
     .team-member { 
       background: var(--white); 
       padding: 20px; 
@@ -122,12 +111,11 @@
 }
 
 .member-img img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
     
-    /* CTA */
     .call-to-action { 
       text-align: center; 
       background: linear-gradient(to right, var(--saffron), var(--blue), var(--green));
@@ -150,7 +138,6 @@
     }
     .btn-lg { padding: 15px 40px; font-size: 18px; }
     
-    /* Footer */
     .footer { 
       padding: 30px 0; 
       text-align: center; 
@@ -158,7 +145,6 @@
       color: white; 
     }
     
-
     .scroll-top { 
       position: fixed; 
       right: 30px; 
@@ -178,8 +164,6 @@
       z-index: 999; 
     }
     .scroll-top.active { opacity: 1; visibility: visible; }
-    
-    /* Responsive */
     @media (max-width: 992px) {
       .mobile-nav-toggle { display: block; }
       .navmenu { 
@@ -197,54 +181,273 @@
       .navmenu.active { left: 0; }
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 </head>
-
 <body>
-    <header class="header">
-    <div clas="header-container container">
-        <a href="#" class="header-logo"><h1>Digital Freedom</h1></a>
-        <nav class="header-nav">
-            
-            <ul class="header-menu">
-                <li class="header-item"><a href="#PAST" class="header-link">PAST</a></li>
-                <li class="header-item"><a href="#PRESENT" class="header-link">PRESENT</a></li>
-                <li class="header-item"><a href="#FUTURE" class="header-link">FUTURE</a></li>
-                <li class="header-item"><a href="#TEAMS" class="header-link">CONTRIBUTERS</a></li>
-            </ul>
-        </nav>
-        <i class="mobile-nav-toggel bi bi-list"></i>
-        </div>
-</header>
-<main >
-    <section id="hero" class="hero section">
-        <div class ="container">
-            <h1>From independence to Digital Freedom</h1>
-            <div class="divider"></div>
-            <p>Since gaining the freedom from in 1947 , india has freely</p>
+  <header class="header">
+    <div class="header-container container">
+      <a href="#" class="logo"><h1>Digital Freedom</h1></a>
+      <nav class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Past</a></li>
+          <li><a href="#about">Present</a></li>
+          <li><a href="#future">Future</a></li>
+          <li><a href="#team">Contributors</a></li>
+        </ul>
+      </nav>
+      <i class="mobile-nav-toggle bi bi-list"></i>
+    </div>
+  </header>
 
+  <main>
+    <section id="hero" class="hero section">
+      <div class="container">
+        <h1>From Independence to Digital India</h1>
+        <div class="divider"></div>
+        <p>Since gaining independence in 1947, India has journeyed from a newly free nation focused on self-reliance to a global leader in technology and innovation.</p>
+      </div>
+    </section>
+    <section id="about" class="about section">
+  <div class="container section-title">
+    <h2>Our Foundation</h2>
+    <div><span>The</span> <span class="description-title">Past</span></div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="about-image">
+          <img src="independence-era.jpg" alt="India's Independence Struggle" class="img-fluid">
         </div>
+      </div>
+      <div class="col-lg-6">
+            
+          </div>
+          <div class="col-lg-6">
+            <h2>The Struggle for Freedom</h2>
+            <p class="lead">India's journey began with the hard-fought independence movement that shaped our national identity.</p>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="feature-item">
+                  <i class="bi bi-check-circle-fill"></i>
+                  <h5>Green Revolution</h5>
+                  <p>Transformed India from food-deficient to self-sufficient through agricultural innovation.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="feature-item">
+                  <i class="bi bi-lightbulb-fill"></i>
+                  <h5>Scientific Foundations</h5>
+                  <p>Establishment of IITs, ISRO, and other institutions that would later drive innovation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="present" class="services section light-background">
+      <div class="container section-title">
+        <h2>Current Landscape</h2>
+        <div><span>The</span> <span class="description-title">Present</span></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2>Digital India <span>Transforming the Nation</span></h2>
+          </div>
+          <div class="col-lg-4">
+            <p>India's digital revolution is empowering citizens, improving governance, and creating new economic opportunities.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="service-card">
+              <div class="service-icon"><i class="bi bi-phone"></i></div>
+              <h3>Mobile Penetration</h3>
+              <p>With over 1.2 billion mobile connections, India has one of the fastest growing digital consumer bases.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="service-card">
+              <div class="service-icon"><i class="bi bi-cash-stack"></i></div>
+              <h3>UPI Revolution</h3>
+              <p>Unified Payments Interface has transformed digital payments, making India a global leader in fintech.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="service-card">
+              <div class="service-icon"><i class="bi bi-globe"></i></div>
+              <h3>Startup Ecosystem</h3>
+              <p>India has become the 3rd largest startup hub with over 100 unicorns, driving innovation across sectors.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="past" class="past section">
-        <div class="container section title">
-            <h2>Our Foundation</h2>
-            <div><spam>The</spam><spam class="discription-title">Past</spam></div>
+    <section id="future" class="steps section">
+      <div class="container section-title">
+        <h2>Vision 2047</h2>
+        <div><span>India's</span> <span class="description-title">Future</span></div>
+      </div>
+      <div class="container">
+        <div class="steps-wrapper">
+          <div class="step-item">
+            <div class="step-content">
+              <div class="step-icon"><i class="bi bi-cpu"></i></div>
+              <div class="step-info">
+                <h3>AI Leadership</h3>
+                <p>India aims to become a global hub for artificial intelligence development.</p>
+              </div>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-content">
+              <div class="step-icon"><i class="bi bi-recycle"></i></div>
+              <div class="step-info">
+                <h3>Sustainable Tech</h3>
+                <p>Clean energy and green technology will drive India's next phase of growth.</p>
+              </div>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-content">
+              <div class="step-icon"><i class="bi bi-heart-pulse"></i></div>
+              <div class="step-info">
+                <h3>Digital Healthcare</h3>
+                <p>Telemedicine and AI diagnostics will make quality healthcare accessible.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="about-image">
-                        <img src="" alt="Past Image">
-                    </div>
-                </div>
-                <div class="col-lg-6">
+      </div>
+    </section>
+    <section id="team" class="team section light-background">
+  <div class="container section-title">
+    <h2>Key Contributors</h2>
+    <div><span>Our Digital</span> <span class="description-title">Pioneers</span></div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="team-member d-flex">
+          <div class="member-img">
+            <img src="narayana-murthy.jpg" alt="Narayana Murthy">
+          </div>
+          <div class="member-info">
+            <h4>Narayana Murthy</h4>
+            <span>Infosys Founder</span>
+            <p>Pioneered India's IT services industry and put India on the global technology map.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="team-member d-flex">
+          <div class="member-img">
+            <img src="nandan-nilekani.jpg" alt="Nandan Nilekani">
+          </div>
+          <div class="member-info">
+            <h4>Nandan Nilekani</h4>
+            <span>Aadhaar Architect</span>
+            <p>Led the creation of the world's largest biometric ID system.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="team-member d-flex">
+          <div class="member-img">
+            <img src="nandan-nilekani.jpg" alt="Nandan Nilekani">
+          </div>
+          <div class="member-info">
+            <h4>Kiran Mazumdar-Shaw</h4>
+            <span>Biotech Pioneer</span>
+            <p>Built India's biotechnology sector and advanced healthcare innovation.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="team-member d-flex">
+          <div class="member-img">
+            <img src="nandan-nilekani.jpg" alt="Nandan Nilekani">
+          </div>
+          <div class="member-info">
+            <h4>Vijay Shekhar Sharma</h4>
+            <span>Paytm Founder</span>
+            <p>Revolutionized digital payments and financial inclusion in India.</p>
+          </div>
+        </div>
+      </div>
+            
+        </div>
+      </div>
+    </section>
+    <section id="cta" class="call-to-action section">
+      <div class="container">
+        <h2>Join India's Digital Revolution</h2>
+        <p>Be part of the transformation that's shaping the future of our nation and the world.</p>
+        <a href="#" class="btn btn-lg">Learn How You Can Contribute</a>
+      </div>
+    </section>
+  </main>
 
-                </div>
-                <div class="col-lg-6">
-                    <h2>The Struggle for freedom</h2>
-                    <p class="lead">Gandhi launched and directed three major campaigns in the Indian Independence Movement: noncooperation in 1919-1922, the civil disobedience movement and the Salt Satyagraha of 1930-1931, and the Quit India movement from about 1940-1942.</p>
-                    
-                </div>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Digital Freedom. All rights reserved.</p>
+    </div>
+  </footer>
 
+  <a href="#" class="scroll-top"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script>
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    const navmenu = document.querySelector('.navmenu');
+    
+    mobileNavToggle.addEventListener('click', () => {
+      navmenu.classList.toggle('active');
+      mobileNavToggle.classList.toggle('bi-list');
+      mobileNavToggle.classList.toggle('bi-x');
+    });
+    document.querySelectorAll('.navmenu a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        navmenu.classList.remove('active');
+        mobileNavToggle.classList.toggle('bi-list');
+        mobileNavToggle.classList.toggle('bi-x');
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    window.addEventListener('scroll', () => {
+      const scrollTop = document.querySelector('.scroll-top');
+      if (window.pageYOffset > 100) {
+        scrollTop.classList.add('active');
+      } else {
+        scrollTop.classList.remove('active');
+      }
+    });
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.navmenu a');
+      
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - 300) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
